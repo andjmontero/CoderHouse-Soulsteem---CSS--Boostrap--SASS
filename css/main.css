@@ -1,0 +1,185 @@
+* {
+  margin: 0%;
+  padding: 0%; }
+
+html {
+  height: 100%; }
+
+a {
+  text-decoration: none; }
+
+a:visited {
+  text-decoration: none;
+  color: inherit; }
+
+body {
+  background-size: cover;
+  background-image: url(../images/coffee_home.jpg);
+  height: 100%; }
+
+div {
+  padding: 0% !important; }
+
+li {
+  list-style: none; }
+
+/*----LOGO------*/
+a.navbar-brand {
+  font-family: 'Tangerine', cursive;
+  font-size: 80px;
+  color: white;
+  text-align: center; }
+
+strong {
+  color: #0ad0d0; }
+
+/*----MENU----*/
+a.nav-link {
+  font-family: 'Ubuntu', sans-serif;
+  color: white; }
+
+button {
+  color: teal; }
+
+li:hover {
+  transform: scale(1.3, 1.3);
+  transition: 0.7s;
+  color: turquoise; }
+
+/*------FOOTER------*/
+footer {
+  background-color: teal;
+  height: 50px; }
+
+/*-----HOME------*/
+div {
+  padding: 0%; }
+
+.logo {
+  grid-area: logo; }
+
+nav.header {
+  grid-area: nav; }
+
+section.main {
+  grid-area: main; }
+
+footer.footer {
+  grid-area: footer; }
+
+/*body.home{ display:grid ;
+    grid-template-areas:
+     "logo nav nav nav nav"
+     "main main main main main" 
+     "footer footer footer footer footer ";
+     grid-template-rows: 133px auto 20%;
+     grid-template-columns: 40% 60%;
+    color: white;
+
+}*/
+section.main {
+  grid-column: 1;
+  align-self: center; }
+
+h2.home {
+  color: rgba(255, 255, 255, 0.774);
+  font-family: 'Abril Fatface', cursive;
+  font-size: 50px;
+  letter-spacing: 2px;
+  margin-left: 40px; }
+
+/*----PRODUCTS-----*/
+section.pmain {
+  grid-area: main; }
+
+h2.products {
+  color: rgba(255, 255, 255, 0.774);
+  font-family: 'Abril Fatface', cursive;
+  font-size: 30px;
+  grid-area: h2;
+  grid-column: 1/3;
+  justify-self: center;
+  align-self: center; }
+
+body.products {
+  color: white;
+  display: grid;
+  grid-template-areas: 'logo nav nav nav nav'
+ 'h2 h2 h2 h2 h2'
+ 'main main main main main'
+ 'footer footer footer footer footer';
+  grid-template-rows: 133px 20% auto 10%;
+  grid-template-columns: 40% 60%; }
+
+/*----Contact -----*/
+h2.contact_us {
+  grid-area: h2c;
+  color: rgba(255, 255, 255, 0.774);
+  font-family: 'Abril Fatface', cursive;
+  font-size: 30px;
+  grid-column: 1/3;
+  justify-self: center;
+  align-self: center; }
+
+.section_contact {
+  grid-area: mains; }
+
+body.contact {
+  color: white;
+  display: grid;
+  grid-template-areas: 'logo nav nav nav nav'
+ 'h2c h2c h2c h2c h2c'
+ 'mains mains mains mains mains'
+ 'footer footer footer footer footer';
+  grid-template-rows: 133px 20% auto 10%;
+  grid-template-columns: 40% 60%; }
+
+/*-------COFFEE FACTS------*/
+section.coffee_facts {
+  grid-area: mainc;
+  grid-column: 1/3;
+  justify-self: center;
+  align-self: center; }
+
+p.coffee_facts {
+  font-size: 30px; }
+
+body.coffee_facts {
+  height: 100%;
+  display: grid;
+  grid-template-areas: "logo nav nav nav nav"
+ "mainc mainc mainc mainc mainc" 
+ "footer footer footer footer footer ";
+  grid-template-rows: 133px auto 10%;
+  grid-template-columns: 40% 60%;
+  color: white; }
+
+/*----ABOUT US-------*/
+div.h2 {
+  grid-area: div;
+  color: rgba(255, 255, 255, 0.774);
+  font-family: 'Abril Fatface', cursive;
+  font-size: 20px;
+  grid-column: 1/3;
+  justify-self: center;
+  align-self: center; }
+
+section.about_us {
+  grid-area: main_about; }
+
+body.about_us {
+  height: 100%;
+  display: grid;
+  grid-template-areas: 'logo nav nav nav nav'
+ 'div div div div div '
+ 'main_about main_about main_about main_about main_about '
+ 'footer footer footer footer footer';
+  grid-template-rows: 133px 20% auto 10%;
+  grid-template-columns: 40% 60%;
+  color: white; }
+
+footer.about_us {
+  grid-column: 1/3; }
+
+header, nav {
+  background-image: linear-gradient(to top, transparent, rgba(4, 3, 3, 0.9), #0f1010); }

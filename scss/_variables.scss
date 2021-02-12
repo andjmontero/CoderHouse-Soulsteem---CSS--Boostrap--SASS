@@ -1,0 +1,23 @@
+$yellow: #1e6373;
+$yellowFull: #1e6373;
+
+$b-xs: only screen and
+    (
+        min-width: 320px,
+    );
+$b-s: only screen and
+    (
+        min-width: 480px,
+    );
+$b-m: only screen and
+    (
+        min-width: 600px,
+    );
+$b-l: only screen and
+    (
+        min-width: 768px,
+    );
+$b-xl: only screen and
+    (
+        min-width: 1024px,
+    );

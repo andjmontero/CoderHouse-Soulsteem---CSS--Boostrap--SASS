@@ -1,0 +1,46 @@
+@mixin formInput {
+    background-color: rgba(4, 3, 3, 0.3);
+    border: solid 1px $yellow;
+    color: white;
+    font-weight: 600;
+}
+@mixin transparentBack {
+    background: rgba(0, 0, 0, 0.2);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+}
+
+@mixin back {
+    background-attachment: fixed;
+    height: 100%;
+    background-size: cover;
+}
+@mixin xxs {
+    @media (max-width: 320px) {
+        @content;
+    }
+}
+@mixin xs {
+    @media (max-width: 576px) {
+        @content;
+    }
+}
+@mixin sm {
+    @media (max-width: 768px) {
+        @content;
+    }
+}
+@mixin md {
+    @media (max-width: 992px) {
+        @content;
+    }
+}
+@mixin lg {
+    @media (max-width: 1200px) {
+        @content;
+    }
+}
+@mixin cardback {
+    @content;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
