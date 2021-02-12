@@ -63,11 +63,10 @@ h4 {
 	text-align: center;
 }
 
-p {
-	color: rgb(255, 255, 255);
-	font-family: "Montserrat", sans-serif;
+p {text-align: center;
+	color: rgb(82, 70, 58);
+	font-family: "Montserrat", serif;
 	font-size: 1.5rem;
-	text-align: center;
 	line-height: 2 rem;
 	@include md {
 		font-size: 1rem;
@@ -457,11 +456,7 @@ div.carousel-item {
 div.subtitle {
 	text-align: center;
 }
-p.products {
-	text-align: center;
-	color: rgb(82, 70, 58);
-	font-family: "Old Standard TT", serif;
-}
+
 h2.types {
 	font-size: 3rem;
 	text-align: center;
@@ -474,7 +469,7 @@ div.products {
 }
 
 .hovereffect {
-	height: 166px;
+	height: 170px;
 	overflow: hidden;
 	position: relative;
 	text-align: center;
@@ -622,7 +617,7 @@ div.robusta {
 	transform: scale(1);
 }
 
-div.info p {
+div.info p {color: white;
 	font-size: 15px;
 	display: flex;
 	flex-direction: row;
