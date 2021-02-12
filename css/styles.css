@@ -882,15 +882,15 @@ li {
 }
 
 #on_page {
-  color: #6d391d;
+  color: white;
 }
 
-.nav-menu .navbar-nav .nav-menu__pages:hover {
+.nav-menu .navbar-nav .nav-menu__pages:hover, #on_page:hover {
   -webkit-transform: scale(1.3, 1.3);
   transform: scale(1.3, 1.3);
   -webkit-transition: 0.5s;
   transition: 0.5s;
-  color: #6a4014;
+  color: white;
 }
 
 button.navbar-toggler {
@@ -1120,8 +1120,8 @@ h2.home {
   margin: 0%;
   margin-top: 50px;
   position: relative;
-  color: black;
-  font-family: "Montserrat", serif;
+  color: #6d391d;
+  font-family: "EB Garamond", serif;
   font-size: 4rem;
   letter-spacing: 5px;
   -webkit-animation-name: fadein;
@@ -1155,6 +1155,7 @@ h2.home1 {
   text-align: left;
   font-size: 3rem;
   margin-top: 40px;
+  letter-spacing: 2px;
 }
 
 @media (max-width: 992px) {
@@ -1225,6 +1226,7 @@ div.home {
 }
 
 div.carousel-item .card {
+  border: none;
   background-color: transparent;
   display: -webkit-box;
   display: -ms-flexbox;
