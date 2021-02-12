@@ -32,12 +32,12 @@ a:visited {
 }
 h2 {
 	text-align: center;
-	font-family: "Lora", serif;
+	font-family: "Montserrat", serif;
 	margin: 0 0 20px;
 	padding: 0%;
 	font-size: 3.5rem;
 	color: $yellow;
-
+margin-left: 30px;
 	font-weight: 200;
 	color: $yellow;
 	@include md {
@@ -75,7 +75,7 @@ p {
 }
 
 body {
-	background: linear-gradient(to left, #f0a67e 16%, #f2a981 63%);
+	background: linear-gradient(to left, #f5cdb8 16%, #f5cab2 63%);
 	font-family: "Montserrat", sans-serif;
 }
 
@@ -129,7 +129,7 @@ li {
 .nav-menu .navbar-nav .nav-menu__pages {
 	font-size: 1.25rem;
 	font-family: "Lora", serif;
-	color: white;
+	color: $yellow;
 	text-align: center;
 	padding: 0%;
 
@@ -316,6 +316,7 @@ div.section-home {
 	background-image: url(../images/b.jpg);
 	background-size: cover;
 	background-position: center;
+	
 }
 h3.home {
 	background-color: rgba(102, 99, 99, 0.487);
@@ -336,10 +337,12 @@ h3.home {
 }
 h2.home {
 	margin: 0%;
+	margin-left: 30px;
 	text-align: left;
 	position: relative;
-	color: rgb(24, 24, 24);
-	font-family: "Lora", serif;
+	color: rgb(255, 255, 255);
+	text-shadow: 0 13.36px 8.896px #000000;
+	font-family: "Montserrat", serif;
 	font-size: 4rem;
 	letter-spacing: 5px;
 	animation-name: fadein;
@@ -348,11 +351,22 @@ h2.home {
 
 	@include md {
 		font-size: 2.7rem;
+		margin-top: 20px;
 	}
 	@include sm {
-		font-size: 2rem;
+		font-size: 2rem;margin-top: 10px;
 	}
 }
+h2.home1{color: white;
+text-align: left;
+font-size: 3rem; margin-top: 40px;
+@include md {
+	font-size: 2.7rem;
+	margin-top: 25px;
+}
+@include sm {
+	font-size: 2rem;margin-top: 20px;
+}}
 div.home {
 	position: relative;
 	height: 300px;
