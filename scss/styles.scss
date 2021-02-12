@@ -64,7 +64,7 @@ h4 {
 }
 
 p {
-	color: white;
+	color: rgb(255, 255, 255);
 	font-family: "Montserrat", sans-serif;
 	font-size: 1.5rem;
 	text-align: center;
@@ -143,11 +143,8 @@ li {
 	
 }
 .nav-menu .navbar-nav .nav-menu__pages:hover, #on_page:hover {
-	-webkit-transform: scale(1.3, 1.3);
-	transform: scale(1.3, 1.3);
-	-webkit-transition: 0.5s;
-	transition: 0.5s;
 	color: white;
+
 }
 button.navbar-toggler {
 	margin-right: 20px;
@@ -202,6 +199,7 @@ footer {
 				font-size: 15px;
 				font-weight: bold;
 				margin-top: 40px;
+				color: $yellow;
 			}
 			li {
 				font-size: 15px;
@@ -216,6 +214,7 @@ footer {
 			h4 {
 				font-size: 15px;
 				font-weight: bold;
+				color: $yellow;
 			}
 			ul li {
 				display: inline;
@@ -242,7 +241,7 @@ footer {
 			input.footer {
 				display: inline-block;
 				width: 230px;
-				background-color: rgba(255, 255, 255, 0.734);
+				background-color: white;
 				border-style: none;
 				border-radius: 2px;
 
@@ -255,19 +254,19 @@ footer {
 				font-size: 15px;
 			}
 			input.footer:focus {
-				background-color: rgba(245, 222, 179, 1);
+				box-shadow: 0px 0px 10px 5px #e6aa8a ;
 			}
 			button.footer {
 				border-radius: 2px;
 				color: white;
 				font-weight: 500;
-				background-color: rgba(194, 204, 9, 0.433);
+				background-color:#e6aa8a ;
 				border: none;
 
 				padding: 3px;
 			}
 			button.footer:hover {
-				background-color: rgba(194, 204, 9, 0.9);
+				background-color: #f5cab2;
 			}
 			button.footer:focus {
 				outline: none;
@@ -458,15 +457,16 @@ div.carousel-item {
 div.subtitle {
 	text-align: center;
 }
-p.beans {
+p.products {
 	text-align: center;
-	color: white;
+	color: rgb(82, 70, 58);
 	font-family: "Old Standard TT", serif;
 }
 h2.types {
-	font-size: 2.5rem;
+	font-size: 3rem;
 	text-align: center;
 	margin: 15px;
+	font-family: 'EB Garamond', serif;
 }
 div.products {
 	@include transparentBack;
@@ -596,8 +596,8 @@ div.robusta {
 }
 .hovereffect div.info {
 	color: white;
-	background-color: rgba(20, 21, 21, 0.7);
-	opacity: 0;
+	background-color: rgba(8, 9, 9, 0.6);
+	
 	filter: alpha(opacity=0);
 	-webkit-transform: scale(0);
 	-ms-transform: scale(0);
@@ -607,7 +607,7 @@ div.robusta {
 	font-weight: normal;
 	width: fill;
 	height: 56%;
-	box-shadow: 0 -3px 8px -2px $yellow;
+
 	line-height: 1.2;
 	display: flex;
 	flex-direction: column;
@@ -653,15 +653,20 @@ a.products {
 	}
 }
 a.products:hover {
-	box-shadow: 0 0px 10px -2px $yellow;
+	box-shadow: 0 0px 6px 2px #f5cab2 ;
 }
 
 /*----ABOUT US-------*/
 
 div.about_us {
 	padding: 20px;
-	background: rgba(0, 0, 0, 0.5);
-	box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+	@include transparentBack;
+	h2{padding: 0%;
+		font-size: 2.875rem;
+		color: $yellow;
+		text-align: center;
+		font-weight: 200;
+		margin: 0px;}
 	p.about_us {
 		text-align: center;
 		color: white;
