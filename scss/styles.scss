@@ -77,6 +77,7 @@ p {
 body {
 	background: linear-gradient(to left, #f5cdb8 16%, #f5cab2 63%);
 	font-family: "Montserrat", sans-serif;
+	height: 100%;
 }
 
 div {
@@ -322,7 +323,7 @@ div.section-home {
 h3.home {
 	background-color: rgba(102, 99, 99, 0.487);
 	color: $yellowFull;
-	font-family: "Old Standard TT", serif;
+	font-family: "EB Garamond", serif;
 	font-size: 30px;
 	margin-top: 20px;
 	position: relative;
@@ -355,9 +356,9 @@ h2.home {
 	
 	}
 	@include sm {
-		font-size: 2.5rem;
+		font-size: 3rem;
 	}
-	@include xs {font-size: 2rem;}
+	@include xs {font-size: 3rem;}
 }
 h2.home1{color: white;
 text-align: left;
@@ -415,7 +416,7 @@ div.carousel-item {
 			font-size: 40px;
 			font-weight: lighter;
 			color: rgb(95, 67, 35);
-			margin-bottom: 30px;
+			margin-bottom: 10px;
 			margin-top: 40px;
 
 			@include lg {
@@ -441,6 +442,9 @@ div.carousel-item {
 			text-decoration: none;
 
 			margin-bottom: 20px;
+		}
+		.button:hover{
+			font-weight: 600
 		}
 	}
 }
