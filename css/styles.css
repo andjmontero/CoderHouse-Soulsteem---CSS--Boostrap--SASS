@@ -1649,16 +1649,13 @@ div.elaboration div.row h3 {
           box-shadow: none;
 }
 
+div.elaboration div.row h4 {
+  margin-top: 20px;
+}
+
 div.elaboration div.row img {
   max-width: 100%;
   height: auto;
-  margin: 15px;
-}
-
-@media (max-width: 480px) {
-  div.elaboration div.row img {
-    margin: 0%;
-  }
 }
 
 div.elaboration div.row p {
