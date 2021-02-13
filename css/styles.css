@@ -1442,6 +1442,7 @@ div.robusta .coffee-7 {
 
 @media (max-width: 992px) {
   .hovereffect h6 {
+    font-size: 25px;
     margin-top: 10px;
   }
 }
@@ -1523,7 +1524,7 @@ div.info p {
 
 @media (max-width: 768px) {
   div.info p {
-    font-size: 0.7rem;
+    font-size: 15px;
   }
 }
 
