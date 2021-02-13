@@ -1137,8 +1137,8 @@ h2.home {
   letter-spacing: 5px;
   -webkit-animation-name: fadein;
           animation-name: fadein;
-  -webkit-animation-duration: 4s;
-          animation-duration: 4s;
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
   -webkit-animation-iteration-count: 1;
           animation-iteration-count: 1;
 }
@@ -1595,6 +1595,7 @@ div.about_us div.img {
 
 div.about_us div.img img {
   width: 100%;
+  margin-bottom: 10px;
 }
 
 /*----Contact -----*/
@@ -1719,6 +1720,6 @@ div.elaboration div.final {
 
 div.elaboration ul.elaboration li {
   color: white;
-  list-style-type: disc;
+  list-style-type: none;
 }
 /*# sourceMappingURL=styles.css.map */

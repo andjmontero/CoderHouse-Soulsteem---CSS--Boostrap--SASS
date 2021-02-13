@@ -353,7 +353,7 @@ h2.home {
 	font-size: 4rem;
 	letter-spacing: 5px;
 	animation-name: fadein;
-	animation-duration: 4s;
+	animation-duration: 5s;
 	animation-iteration-count: 1;
 
 	@include md {
@@ -700,6 +700,7 @@ div.about_us {
 	align-items: center;
 	
 img{width: 100%;
+	margin-bottom: 10px
 	
 }
 }
@@ -795,7 +796,7 @@ div.elaboration {
 	}
 	ul.elaboration li {
 		color: white;
-		list-style-type: disc;
+		list-style-type: none;
 	}
 }
 /*# sourceMappingURL=styles.css.map */
