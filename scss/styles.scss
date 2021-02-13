@@ -101,14 +101,14 @@ li {
 		text-align: center;
 		margin: 0%;
 		justify-self: center;
-		margin-left: 10px;
+		
 
-		@media (max-width: 480px) {
-			margin-left: 10px;
-			font-size: 3.5rem;
+		@include sm {
+			
+			font-size: 3.8rem;
 		}
-		@media (max-width: 320px) {
-			font-size: 2.5rem;
+		@include xs {
+			font-size: 3.5rem;
 		}
 	}
 }
@@ -145,9 +145,7 @@ li {
 	color: white;
 
 }
-button.navbar-toggler {
-	margin-right: 20px;
-}
+
 
 /*------FOOTER------*/
 footer {
@@ -196,7 +194,7 @@ footer {
 			text-align: center;
 			line-height: 1.5rem;
 			h4 {
-				font-size: 15px;
+				font-size: 20px;
 				font-weight: bold;
 				margin-top: 40px;
 				color: $yellow;
@@ -212,32 +210,40 @@ footer {
 		div.ul-footer {
 			text-align: center;
 			h4 {
-				font-size: 15px;
+				font-size: 20px;
 				font-weight: bold;
 				color: $yellow;
 			}
 			ul li {
 				display: inline;
 				margin-left: 20px;
+				a {
+					font-size: 15px;
+	
+					text-decoration: none;
+					color: white;
+				}
+				a:hover {
+					color: $yellow;
+				}
+				a:visited {
+					color: white;
+				}
 			}
-			a {
-				font-size: 15px;
-
-				text-decoration: none;
-				color: white;
-			}
-			a:hover {
+			ul li:hover {
 				color: $yellow;
 			}
-			a:visited {
-				color: white;
-			}
+			
+			
 		}
-		div.newsletter {
+		div.newsletter { padding: 0%;
 			h4 {
 				font-weight: lighter;
 				margin-top: 30px;
+				strong{font-weight: 600;}
 			}
+			form{margin-right: 0%;
+			margin-left: 0%;}
 			input.footer {
 				display: inline-block;
 				width: 230px;
@@ -475,8 +481,8 @@ div.products {
 	position: relative;
 	text-align: center;
 	cursor: default;
-
-	margin: 10px;
+margin-bottom: 20px;
+	
 	border-radius: 15px;
 	border: solid 2px rgba(136, 136, 136, 0.5);
 	@include md {
@@ -486,7 +492,7 @@ div.products {
 div.arabica {
 	.coffee {
 		@include cardback {
-			background-image: url(../images/beans.jpg);
+			background-image: url(../images/coffee-beans.jpg);
 		}
 	}
 	.coffee-1 {
@@ -547,7 +553,7 @@ div.robusta {
 
 .hovereffect h3 {
 	font-size: 30px;
-	margin-top: 10px;
+	margin-top: 0px;
 margin-bottom: 0%;
 	color: white;
 	text-align: center;
@@ -562,7 +568,7 @@ margin-bottom: 0%;
 	box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
 	
 	@include md {
-		font-size: 20px;
+		font-size: 25px;
 	}
 }
 .hovereffect h6 {
@@ -576,14 +582,19 @@ margin-bottom: 0%;
 	transform: translateY(45px);
 	-webkit-transition: all 0.4s ease-in-out;
 	transition: all 0.4s ease-in-out;
+	margin-top: 5px;
+	@include md {
+		font-size: 15px;
+		margin-top: 10px;
+	}
 }
 
 .hovereffect:hover h3,
 .hovereffect:hover h6 {
 	color: white;
-	-webkit-transform: translateY(5px);
-	-ms-transform: translateY(5px);
-	transform: translateY(5px);
+	-webkit-transform: translateY(0px);
+	-ms-transform: translateY(0px);
+	transform: translateY(0px);
 	background-color: transparent;
 }
 .hovereffect:hover h3 {
@@ -605,7 +616,7 @@ margin-bottom: 0%;
 	transition: all 0.4s ease-in-out;
 	font-weight: normal;
 	width: fill;
-	height: 56%;
+	height: 60%;
 
 	line-height: 1.2;
 	display: flex;
@@ -620,18 +631,20 @@ margin-bottom: 0%;
 	-webkit-transform: scale(1);
 	-ms-transform: scale(1);
 	transform: scale(1);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
 }
 
 div.info p {color: white;
 	font-size: 15px;
-	display: flex;
-	flex-direction: row;
-	justify-content: center;
-	margin-bottom: 8px;
+    margin-top: 10px;
+	margin-bottom: 12px;
 	
 	
 	@include md {
-		font-size: 0.9rem;
+		font-size: 12px;
 		margin-top: 0%;
 	}
 	@include sm {font-size: 0.7rem;}
@@ -738,9 +751,35 @@ ul.contact {
 	color: $yellow;
 	text-align: center;
 }
+
 button.contact{background-color:#e6aa8a ;
 border: solid 1px $yellow}
 button.contact:hover{background-color: #f5cab2;}
+
+.custom-checkbox .custom-control-input:checked ~ .custom-control-label::before {
+	background-color: #e6aa8a ;
+	box-shadow:0 0 3px #e6aa8a ;
+	border: solid 1px $yellow;
+}
+.custom-checkbox .custom-control-input:focus ~ .custom-control-label::before {
+	box-shadow:0 0 3px #e6aa8a ;
+	border: solid 1px $yellow;
+}
+.custom-checkbox .custom-control-input:active ~ .custom-control-label::before {
+	box-shadow:0 0 3px #e6aa8a ;
+	background:rgba(202, 78, 78, 0.3);
+}
+.custom-checkbox .custom-control-label::before {
+	
+	border-radius: 0.25rem;
+
+}
+.custom-control-label::before {
+	background-color:#e6aa8a;
+	border: solid 1px $yellow;
+}
+
+
 /* Elaboration Process*/
 h2.elaboration {
 	margin-top: 20px
