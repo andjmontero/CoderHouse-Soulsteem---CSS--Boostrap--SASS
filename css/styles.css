@@ -1273,14 +1273,14 @@ div.carousel-item .card h3 {
 
 @media (max-width: 992px) {
   div.carousel-item .card h3 {
-    font-size: 35px;
+    font-size: 25px;
     margin-bottom: 20px;
   }
 }
 
 @media (max-width: 768px) {
   div.carousel-item .card h3 {
-    font-size: 30px;
+    font-size: 23px;
     margin-bottom: 15px;
   }
 }
