@@ -1617,7 +1617,6 @@ form {
   color: #794930;
   font-size: 1.125rem;
   text-align: center;
-  margin: 40px;
 }
 
 form .form-control {
@@ -1664,34 +1663,6 @@ button.contact {
 
 button.contact:hover {
   background-color: #f5cab2;
-}
-
-.custom-checkbox .custom-control-input:checked ~ .custom-control-label::before {
-  background-color: #e6aa8a;
-  -webkit-box-shadow: 0 0 3px #e6aa8a;
-          box-shadow: 0 0 3px #e6aa8a;
-  border: solid 1px #794930;
-}
-
-.custom-checkbox .custom-control-input:focus ~ .custom-control-label::before {
-  -webkit-box-shadow: 0 0 3px #e6aa8a;
-          box-shadow: 0 0 3px #e6aa8a;
-  border: solid 1px #794930;
-}
-
-.custom-checkbox .custom-control-input:active ~ .custom-control-label::before {
-  -webkit-box-shadow: 0 0 3px #e6aa8a;
-          box-shadow: 0 0 3px #e6aa8a;
-  background: rgba(202, 78, 78, 0.3);
-}
-
-.custom-checkbox .custom-control-label::before {
-  border-radius: 0.25rem;
-}
-
-.custom-control-label::before {
-  background-color: #e6aa8a;
-  border: solid 1px #794930;
 }
 
 /* Elaboration Process*/
