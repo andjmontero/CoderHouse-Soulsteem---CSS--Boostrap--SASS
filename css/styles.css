@@ -1407,7 +1407,7 @@ div.robusta .coffee-7 {
   transform: translateY(45px);
   -webkit-transition: all 0.4s ease-in-out;
   transition: all 0.4s ease-in-out;
-  background: #00000095;
+  background: rgba(77, 77, 77, 0.5);
   -webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
           box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
 }
@@ -1444,6 +1444,7 @@ div.robusta .coffee-7 {
   -webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
           box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
   z-index: 20;
+  border-bottom: solid 1px #df9872;
 }
 
 .hovereffect div.info {
@@ -1503,12 +1504,18 @@ div.info p {
   }
 }
 
+@media (max-width: 768px) {
+  div.info p {
+    font-size: 0.7rem;
+  }
+}
+
 a.products {
   color: whitesmoke;
   text-decoration: none;
   background: transparent;
   border-radius: 50px;
-  border: 1px solid #794930;
+  border: 1px solid #df9872;
   -webkit-transition: all 0.4s ease 0s;
   transition: all 0.4s ease 0s;
   padding: 4px;
@@ -1521,13 +1528,13 @@ a.products {
 @media (max-width: 992px) {
   a.products {
     margin-top: 0%;
-    font-size: 8px;
+    font-size: 12px;
   }
 }
 
 a.products:hover {
-  -webkit-box-shadow: 0 0px 6px 2px #f5cab2;
-          box-shadow: 0 0px 6px 2px #f5cab2;
+  -webkit-box-shadow: 0 0px 10px 1px #f5cab2;
+          box-shadow: 0 0px 10px 1px #f5cab2;
 }
 
 /*----ABOUT US-------*/
@@ -1544,7 +1551,7 @@ div.about_us h2 {
   color: #794930;
   text-align: center;
   font-weight: 200;
-  margin-top: 20px;
+  margin-top: 30px;
 }
 
 div.about_us p.about_us {

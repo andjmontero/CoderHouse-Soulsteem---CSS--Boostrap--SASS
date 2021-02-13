@@ -558,8 +558,9 @@ margin-bottom: 0%;
 	transform: translateY(45px);
 	-webkit-transition: all 0.4s ease-in-out;
 	transition: all 0.4s ease-in-out;
-	background: #00000095;
+	background:rgba(77, 77, 77, 0.5);
 	box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+	
 	@include md {
 		font-size: 20px;
 	}
@@ -590,6 +591,7 @@ margin-bottom: 0%;
 	background: rgba(0, 0, 0, 0.8);
 	box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
 	z-index: 20;
+	border-bottom: solid 1px #df9872;
 }
 .hovereffect div.info {
 	color: white;
@@ -632,6 +634,7 @@ div.info p {color: white;
 		font-size: 0.9rem;
 		margin-top: 0%;
 	}
+	@include sm {font-size: 0.7rem;}
 }
 
 a.products {
@@ -639,7 +642,7 @@ a.products {
 	text-decoration: none;
 	background: transparent;
 	border-radius: 50px;
-	border: 1px solid $yellow;
+	border: 1px solid #df9872;
 	transition: all 0.4s ease 0s;
 	padding: 4px;
 	margin-bottom: 5px;
@@ -648,11 +651,11 @@ a.products {
 	
 	@include md {
 		margin-top: 0%;
-		font-size: 8px;
+		font-size: 12px;
 	}
 }
 a.products:hover {
-	box-shadow: 0 0px 6px 2px #f5cab2 ;
+	box-shadow: 0 0px 10px 1px #f5cab2 ;
 }
 
 /*----ABOUT US-------*/
@@ -665,7 +668,7 @@ div.about_us {
 		color: $yellow;
 		text-align: center;
 		font-weight: 200;
-		margin-top: 20px;}
+		margin-top: 30px;}
 	p.about_us {
 		text-align: center;
 		color: white;
