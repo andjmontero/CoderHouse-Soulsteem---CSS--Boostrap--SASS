@@ -777,6 +777,7 @@ h2 {
 
 h3,
 h5 {
+  margin-top: 10px;
   font-family: "Lora", serif;
   color: #6a391f;
   text-align: center;
@@ -786,6 +787,7 @@ h5 {
 h4 {
   color: whitesmoke;
   text-align: center;
+  font-size: 30px;
 }
 
 p {
@@ -1396,7 +1398,7 @@ div.robusta .coffee-7 {
 .hovereffect h3 {
   font-size: 30px;
   margin-top: 10px;
-  margin-bottom: 10px;
+  margin-bottom: 0%;
   color: white;
   text-align: center;
   position: relative;
@@ -1441,11 +1443,12 @@ div.robusta .coffee-7 {
   background: rgba(0, 0, 0, 0.8);
   -webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
           box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+  z-index: 20;
 }
 
 .hovereffect div.info {
   color: white;
-  background-color: rgba(8, 9, 9, 0.6);
+  background-color: transparent;
   filter: alpha(opacity=0);
   -webkit-transform: scale(0);
   transform: scale(0);
@@ -1470,6 +1473,7 @@ div.robusta .coffee-7 {
 }
 
 .hovereffect:hover div.info {
+  background: rgba(0, 0, 0, 0.6);
   opacity: 1;
   filter: alpha(opacity=100);
   -webkit-transform: scale(1);
@@ -1540,7 +1544,7 @@ div.about_us h2 {
   color: #794930;
   text-align: center;
   font-weight: 200;
-  margin: 0px;
+  margin-top: 20px;
 }
 
 div.about_us p.about_us {
@@ -1567,7 +1571,8 @@ h2.contact {
   color: #794930;
   text-align: center;
   font-weight: 200;
-  margin: 0px;
+  margin-top: 30px;
+  margin-bottom: 0%;
 }
 
 form {
@@ -1614,7 +1619,7 @@ ul.contact {
 
 /* Elaboration Process*/
 h2.elaboration {
-  margin: 0%;
+  margin-top: 20px;
 }
 
 div.elaboration {
@@ -1631,6 +1636,7 @@ div.elaboration div.row {
 }
 
 div.elaboration div.row h3 {
+  font-size: 40px;
   background-color: transparent;
   -webkit-box-shadow: none;
           box-shadow: none;
