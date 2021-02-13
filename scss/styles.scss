@@ -60,7 +60,7 @@ h5 {margin-top: 10px;
 	margin-bottom: 20px;
 }
 h4 {
-	color: whitesmoke;
+	color: $yellow;
 	text-align: center;
 	font-size: 30px;
 }
@@ -81,9 +81,7 @@ body {
 	height: 100%;
 }
 
-div {
-	padding: 0% !important;
-}
+
 
 li {
 	list-style: none;
@@ -180,6 +178,7 @@ footer {
 			}
 			p {
 				margin-bottom: 30px;
+				color: white;
 			}
 		}
 		div.social-mobile {
@@ -348,7 +347,7 @@ h2.home {
 	font-size: 4rem;
 	letter-spacing: 5px;
 	animation-name: fadein;
-	animation-duration: 2s;
+	animation-duration: 4s;
 	animation-iteration-count: 1;
 
 	@include md {
@@ -662,8 +661,9 @@ a.products:hover {
 /*----ABOUT US-------*/
 
 div.about_us {
-	padding: 20px;
+	
 	@include transparentBack;
+	
 	h2{padding: 0%;
 		font-size: 2.875rem;
 		color: $yellow;
@@ -672,14 +672,27 @@ div.about_us {
 		margin-top: 30px;}
 	p.about_us {
 		text-align: center;
-		color: white;
-		font-size: 1.563rem;
+	
+		font-size: 1.2rem;
+		margin: 20px;
 	}
 	a.about_us {
 		font-weight:800;
 		color: $yellow;
 	}
+
+	div.img{ height: 100%;
+		display:flex;
+	align-items: center;
+	
+img{width: 100%;
+	
 }
+}
+}
+
+
+
 
 /*----Contact -----*/
 div.contact {
@@ -695,23 +708,26 @@ h2.contact {
 	
 }
 form {
-	color: white;
+	color: $yellow;
 	font-size: 1.125rem;
 	text-align: center;
 	margin: 40px;
 	.form-control {
 		@include formInput;
+		color: $yellow;
+		
 	}
 	.form-control:focus {
 		@include formInput;
 		box-shadow: 0 0px 10px -2px $yellow;
+		color: $yellow;
 	}
 	input.form-check-input {
 		margin-left: 15px;
 		position: relative;
 	}
 	label {
-		color: white;
+		color: $yellow;
 		font-weight: 900;
 		.form-check-label {
 			padding: 7px 15px;
@@ -719,9 +735,12 @@ form {
 	}
 }
 ul.contact {
-	color: white;
+	color: $yellow;
 	text-align: center;
 }
+button.contact{background-color:#e6aa8a ;
+border: solid 1px $yellow}
+button.contact:hover{background-color: #f5cab2;}
 /* Elaboration Process*/
 h2.elaboration {
 	margin-top: 20px
@@ -742,12 +761,14 @@ div.elaboration {
 		img {
 			max-width: 100%;
 			height: auto;
+			
 		
 			
 			
 		}
 		p {
 			margin: 20px;
+			@include md {margin: 10px;}
 		}
 	}
 	div.start{border-top: none;}
