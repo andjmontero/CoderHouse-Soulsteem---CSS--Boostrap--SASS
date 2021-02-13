@@ -34,8 +34,9 @@ h2 {
 	text-align: center;
 	font-family: "Montserrat", serif;
 	margin: 0 0 20px;
+	margin-top: 30px;
 	padding: 0%;
-	font-size: 3.5rem;
+	font-size: 46px;
 	color: $yellow;
 margin-left: 30px;
 	font-weight: 200;
@@ -675,7 +676,7 @@ div.about_us {
 		font-size: 1.563rem;
 	}
 	a.about_us {
-		font-weight: 500;
+		font-weight:800;
 		color: $yellow;
 	}
 }
@@ -691,7 +692,7 @@ h2.contact {
 	text-align: center;
 	font-weight: 200;
 	margin-top: 30px;
-	margin-bottom: 0%;
+	
 }
 form {
 	color: white;
@@ -749,8 +750,9 @@ div.elaboration {
 			margin: 20px;
 		}
 	}
+	div.start{border-top: none;}
 	div.final {
-		border-bottom: solid 1px rgba(136, 136, 136, 0.5);
+		border-bottom: none
 	}
 	ul.elaboration li {
 		color: white;
