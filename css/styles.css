@@ -790,7 +790,7 @@ p {
   text-align: center;
   color: #52463a;
   font-family: "Montserrat", serif;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   line-height: 2 rem;
 }
 
@@ -1091,7 +1091,7 @@ i.fab:hover {
 }
 
 p.copy {
-  color: wheat;
+  color: white;
 }
 
 /*-----HOME------*/
@@ -1646,6 +1646,8 @@ div.elaboration div.row h4 {
 div.elaboration div.row img {
   max-width: 100%;
   height: auto;
+  margin-top: 22px;
+  margin-bottom: 22px;
 }
 
 div.elaboration div.row p {
@@ -1655,6 +1657,7 @@ div.elaboration div.row p {
 @media (max-width: 992px) {
   div.elaboration div.row p {
     margin: 10px;
+    margin-bottom: 0%;
   }
 }
 
