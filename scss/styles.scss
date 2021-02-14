@@ -127,6 +127,7 @@ footer {
     color: white;
     background: rgba(0, 0, 0, 0.3);
     box-shadow: 0 5px 15px rgba(87, 87, 87, 0.5);
+    /*------Brand------*/
     div.brandfooter {
       text-align: center;
       ul {
@@ -150,6 +151,7 @@ footer {
         color: white;
       }
     }
+    /*------Social Mobile------*/
     div.social-mobile {
       ul {
         text-align: center;
@@ -160,7 +162,7 @@ footer {
         display: inline;
         margin: 20px;
       }
-    }
+    } /*------Contact Info------*/
     div.ul-info {
       text-align: center;
       line-height: 1.5rem;
@@ -177,7 +179,7 @@ footer {
         }
       }
     }
-
+    /*------Navigation------*/
     div.ul-footer {
       text-align: center;
       h4 {
@@ -201,6 +203,7 @@ footer {
         color: $main;
       }
     }
+    /*------Newsletter------*/
     div.newsletter {
       text-align: center;
       padding: 0%;
@@ -307,7 +310,7 @@ div.section-home {
       opacity: 1;
     }
   }
-
+  /*------Text Carousel Home------*/
   div.carousel-item {
     .card {
       border: none;
@@ -373,6 +376,7 @@ div.products {
   color: $mainFull;
 }
 
+/*------Products Cards------*/
 div.arabica {
   .coffee {
     @include cardback {
@@ -424,6 +428,7 @@ div.liberica {
     }
   }
 }
+
 .hovereffect {
   height: 170px;
   overflow: hidden;

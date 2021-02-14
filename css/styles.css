@@ -163,6 +163,11 @@ footer div.container-fluid {
   background: rgba(0, 0, 0, 0.3);
   -webkit-box-shadow: 0 5px 15px rgba(87, 87, 87, 0.5);
           box-shadow: 0 5px 15px rgba(87, 87, 87, 0.5);
+  /*------Brand------*/
+  /*------Social Mobile------*/
+  /*------Contact Info------*/
+  /*------Navigation------*/
+  /*------Newsletter------*/
 }
 
 footer div.container-fluid div.brandfooter {
@@ -354,6 +359,7 @@ div.section-home {
   background-position: center;
   -webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
           box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  /*------Text Carousel Home------*/
 }
 
 div.section-home h2.home {
@@ -390,36 +396,18 @@ div.section-home h2.home {
   }
 }
 
-@-webkit-keyframes fadein {
+@-webkit-keyframes fadeIn {
   0% {
     opacity: 0;
-  }
-  25% {
-    opacity: 0.2;
-  }
-  50% {
-    opacity: 0.5;
-  }
-  75% {
-    opacity: 0.7;
   }
   100% {
     opacity: 1;
   }
 }
 
-@keyframes fadein {
+@keyframes fadeIn {
   0% {
     opacity: 0;
-  }
-  25% {
-    opacity: 0.2;
-  }
-  50% {
-    opacity: 0.5;
-  }
-  75% {
-    opacity: 0.7;
   }
   100% {
     opacity: 1;
@@ -510,6 +498,7 @@ div.products {
   color: #6a391f;
 }
 
+/*------Products Cards------*/
 div.arabica .coffee {
   background-image: url(../images/coffee-beans.jpg);
   background-repeat: no-repeat;
