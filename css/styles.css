@@ -883,7 +883,8 @@ li {
   color: white;
 }
 
-.nav-menu .navbar-nav .nav-menu__pages:hover, #on_page:hover {
+.nav-menu .navbar-nav .nav-menu__pages:hover,
+#on_page:hover {
   color: white;
 }
 
@@ -1100,7 +1101,7 @@ i.fab:hover {
 /*-----HOME------*/
 div.section-home {
   height: 90vh;
-  background-image: url(../images/b.jpg);
+  background-image: url(../images/cup-white-home.jpg);
   background-size: cover;
   background-position: center;
 }
@@ -1314,7 +1315,7 @@ h2.types {
   font-size: 3rem;
   text-align: center;
   margin: 15px;
-  font-family: 'EB Garamond', serif;
+  font-family: "EB Garamond", serif;
 }
 
 div.products {

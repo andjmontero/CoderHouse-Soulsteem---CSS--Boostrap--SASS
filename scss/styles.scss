@@ -3,800 +3,805 @@
 @import "_each";
 @import "_extend";
 @for $i from 10 through 100 {
-	.box-#{$i} {
-		width: $i * 1%;
-	}
+  .box-#{$i} {
+    width: $i * 1%;
+  }
 }
 @for $i from 10 through 100 {
-	.height-#{$i} {
-		height: $i * 1%;
-	}
+  .height-#{$i} {
+    height: $i * 1%;
+  }
 }
 * {
-	margin: 0%;
-	padding: 0%;
+  margin: 0%;
+  padding: 0%;
 }
 
 html {
-	margin: 0%;
-	padding: 0%;
+  margin: 0%;
+  padding: 0%;
 }
 
 a {
-	text-decoration: none;
+  text-decoration: none;
 }
 
 a:visited {
-	text-decoration: none;
-	color: inherit;
+  text-decoration: none;
+  color: inherit;
 }
 h2 {
-	text-align: center;
-	font-family: "Montserrat", serif;
-	margin: 0 0 20px;
-	margin-top: 30px;
-	padding: 0%;
-	font-size: 46px;
-	color: $yellow;
-margin-left: 30px;
-	font-weight: 200;
-	color: $yellow;
-	@include md {
-		font-size: 3rem;
-	}
-	@include sm {
-		font-size: 2.5rem;
-	}
+  text-align: center;
+  font-family: "Montserrat", serif;
+  margin: 0 0 20px;
+  margin-top: 30px;
+  padding: 0%;
+  font-size: 46px;
+  color: $main;
+  margin-left: 30px;
+  font-weight: 200;
+  color: $main;
+  @include md {
+    font-size: 3rem;
+  }
+  @include sm {
+    font-size: 2.5rem;
+  }
 
-	@include xs {
-		font-size: 2rem;
-	}
+  @include xs {
+    font-size: 2rem;
+  }
 }
 h3,
-h5 {margin-top: 10px;
-	font-family: "Lora", serif;
-	color: $yellowFull;
-	text-align: center;
-	margin-bottom: 20px;
+h5 {
+  margin-top: 10px;
+  font-family: "Lora", serif;
+  color: $mainFull;
+  text-align: center;
+  margin-bottom: 20px;
 }
 h4 {
-	color: $yellow;
-	text-align: center;
-	font-size: 30px;
+  color: $main;
+  text-align: center;
+  font-size: 30px;
 }
 
-p {text-align: center;
-	color: rgb(82, 70, 58);
-	font-family: "Montserrat", serif;
-	font-size: 1.5rem;
-	line-height: 2 rem;
-	@include md {
-		font-size: 1rem;
-	}
+p {
+  text-align: center;
+  color: rgb(82, 70, 58);
+  font-family: "Montserrat", serif;
+  font-size: 1.5rem;
+  line-height: 2 rem;
+  @include md {
+    font-size: 1rem;
+  }
 }
 
 body {
-	background: linear-gradient(to left, #f5cdb8 16%, #f5cab2 63%);
-	font-family: "Montserrat", sans-serif;
-	height: 100%;
+  background: linear-gradient(to left, #f5cdb8 16%, #f5cab2 63%);
+  font-family: "Montserrat", sans-serif;
+  height: 100%;
 }
-
-
 
 li {
-	list-style: none;
+  list-style: none;
 }
 .row {
-	margin-left: 0%;
-	margin-right: 0%;
+  margin-left: 0%;
+  margin-right: 0%;
 }
 
 /*----LOGO------*/
 .navbar .nav-menu__logo {
-	text-decoration: none;
-	h1 {
-		font-family: "EB Garamond", serif;
-		font-size: 4rem;
-		color: $yellowFull;
-		text-align: center;
-		margin: 0%;
-		justify-self: center;
-		
+  text-decoration: none;
+  h1 {
+    font-family: "EB Garamond", serif;
+    font-size: 4rem;
+    color: $mainFull;
+    text-align: center;
+    margin: 0%;
+    justify-self: center;
 
-		@include sm {
-			
-			font-size: 3.8rem;
-		}
-		@include xs {
-			font-size: 3.5rem;
-		}
-	}
+    @include sm {
+      font-size: 3.8rem;
+    }
+    @include xs {
+      font-size: 3.5rem;
+    }
+  }
 }
 
 /*----MENU----*/
 #nav {
-	@include transparentBack;
+  @include transparentBack;
 }
 .navbar {
-	margin: 0%;
+  margin: 0%;
 
-	padding: 0px;
+  padding: 0px;
 }
 .navbar .collapse .navbar-nav {
-	width: 100%;
-	margin: 0%;
+  width: 100%;
+  margin: 0%;
 }
 .nav-menu .navbar-nav .nav-menu__pages {
-	font-size: 1.25rem;
-	font-family: "Lora", serif;
-	color: $yellow;
-	text-align: center;
-	padding: 0%;
+  font-size: 1.25rem;
+  font-family: "Lora", serif;
+  color: $main;
+  text-align: center;
+  padding: 0%;
 
-	@include md {
-		padding-bottom: 8px;
-	}
+  @include md {
+    padding-bottom: 8px;
+  }
 }
 #on_page {
-	color: white;
-	
+  color: white;
 }
-.nav-menu .navbar-nav .nav-menu__pages:hover, #on_page:hover {
-	color: white;
-
+.nav-menu .navbar-nav .nav-menu__pages:hover,
+#on_page:hover {
+  color: white;
 }
-
 
 /*------FOOTER------*/
 footer {
-	
-	margin-top: 50px;
-	div.container-fluid {
-		color: white;
-		background: rgba(0, 0, 0, 0.3);
-		box-shadow: 0 5px 15px rgba(87, 87, 87, 0.5);
+  margin-top: 50px;
+  div.container-fluid {
+    color: white;
+    background: rgba(0, 0, 0, 0.3);
+    box-shadow: 0 5px 15px rgba(87, 87, 87, 0.5);
 
-		div.brandfooter {
-			text-align: center;
-			ul {
-				text-align: center;
-				margin-bottom: 5px;
-			}
-			li {
-				display: inline;
-				margin: 20px;
-			}
-			h6.brandfooter {
-				font-family: "EB Garamond", serif;
-				font-size: 3.125rem;
-				margin: 0%;
-				color: $yellow;
-				margin-bottom: -15px;
-				margin-top: 10px;
-			}
-			p {
-				margin-bottom: 30px;
-				color: white;
-			}
-		}
-		div.social-mobile {
-			ul {
-				text-align: center;
-				margin-top: 15px;
-				margin-bottom: 0px;
-			}
-			li {
-				display: inline;
-				margin: 20px;
-			}
-		}
-		div.ul-info {
-			text-align: center;
-			line-height: 1.5rem;
-			h4 {
-				font-size: 20px;
-				font-weight: bold;
-				margin-top: 40px;
-				color: $yellow;
-			}
-			li {
-				font-size: 15px;
-				i {
-					font-size: 12px;
-				}
-			}
-		}
+    div.brandfooter {
+      text-align: center;
+      ul {
+        text-align: center;
+        margin-bottom: 5px;
+      }
+      li {
+        display: inline;
+        margin: 20px;
+      }
+      h6.brandfooter {
+        font-family: "EB Garamond", serif;
+        font-size: 3.125rem;
+        margin: 0%;
+        color: $main;
+        margin-bottom: -15px;
+        margin-top: 10px;
+      }
+      p {
+        margin-bottom: 30px;
+        color: white;
+      }
+    }
+    div.social-mobile {
+      ul {
+        text-align: center;
+        margin-top: 15px;
+        margin-bottom: 0px;
+      }
+      li {
+        display: inline;
+        margin: 20px;
+      }
+    }
+    div.ul-info {
+      text-align: center;
+      line-height: 1.5rem;
+      h4 {
+        font-size: 20px;
+        font-weight: bold;
+        margin-top: 40px;
+        color: $main;
+      }
+      li {
+        font-size: 15px;
+        i {
+          font-size: 12px;
+        }
+      }
+    }
 
-		div.ul-footer {
-			text-align: center;
-			h4 {
-				font-size: 20px;
-				font-weight: bold;
-				color: $yellow;
-			}
-			ul li {
-				display: inline;
-				margin-left: 20px;
-				a {
-					font-size: 15px;
-	
-					text-decoration: none;
-					color: white;
-				}
-				a:hover {
-					color: $yellow;
-				}
-				a:visited {
-					color: white;
-				}
-			}
-			ul li:hover {
-				color: $yellow;
-			}
-			
-			
-		}
-		div.newsletter { padding: 0%;
-			h4 {
-				font-weight: lighter;
-				margin-top: 30px;
-				strong{font-weight: 600;}
-			}
-			form{margin-right: 0%;
-			margin-left: 0%;}
-			input.footer {
-				display: inline-block;
-				width: 230px;
-				background-color: white;
-				border-style: none;
-				border-radius: 2px;
+    div.ul-footer {
+      text-align: center;
+      h4 {
+        font-size: 20px;
+        font-weight: bold;
+        color: $main;
+      }
+      ul li {
+        display: inline;
+        margin-left: 20px;
+        a {
+          font-size: 15px;
 
-				outline: none;
-				box-shadow: none;
+          text-decoration: none;
+          color: white;
+        }
+        a:hover {
+          color: $main;
+        }
+        a:visited {
+          color: white;
+        }
+      }
+      ul li:hover {
+        color: $main;
+      }
+    }
+    div.newsletter {
+      padding: 0%;
+      h4 {
+        font-weight: lighter;
+        margin-top: 30px;
+        strong {
+          font-weight: 600;
+        }
+      }
+      form {
+        margin-right: 0%;
+        margin-left: 0%;
+      }
+      input.footer {
+        display: inline-block;
+        width: 230px;
+        background-color: white;
+        border-style: none;
+        border-radius: 2px;
 
-				color: black;
-			}
-			::placeholder {
-				font-size: 15px;
-			}
-			input.footer:focus {
-				box-shadow: 0px 0px 10px 5px #e6aa8a ;
-			}
-			button.footer {
-				border-radius: 2px;
-				color: white;
-				font-weight: 500;
-				background-color:#e6aa8a ;
-				border: none;
+        outline: none;
+        box-shadow: none;
 
-				padding: 3px;
-			}
-			button.footer:hover {
-				background-color: #f5cab2;
-			}
-			button.footer:focus {
-				outline: none;
-				opacity: 0.7;
-			}
-			:focus {
-				box-shadow: solid 1px grey;
-			}
-			@include sm {
-				h4 {
-					margin: 10px;
-				}
-				form {
-					margin: 15px;
-				}
-			}
-		}
-	}
+        color: black;
+      }
+      ::placeholder {
+        font-size: 15px;
+      }
+      input.footer:focus {
+        box-shadow: 0px 0px 10px 5px #e6aa8a;
+      }
+      button.footer {
+        border-radius: 2px;
+        color: white;
+        font-weight: 500;
+        background-color: #e6aa8a;
+        border: none;
+
+        padding: 3px;
+      }
+      button.footer:hover {
+        background-color: #f5cab2;
+      }
+      button.footer:focus {
+        outline: none;
+        opacity: 0.7;
+      }
+      :focus {
+        box-shadow: solid 1px grey;
+      }
+      @include sm {
+        h4 {
+          margin: 10px;
+        }
+        form {
+          margin: 15px;
+        }
+      }
+    }
+  }
 }
 
 div.footer-contact {
-	color: white;
-	width: auto;
+  color: white;
+  width: auto;
 }
 
 p.slogan {
-	font-size: 1.125rem;
-	margin-top: 0px;
+  font-size: 1.125rem;
+  margin-top: 0px;
 }
 
 footer p {
-	font-size: 70%;
-	margin: 8px;
+  font-size: 70%;
+  margin: 8px;
 }
 
 i.fab {
-	font-size: 1.875rem;
+  font-size: 1.875rem;
 }
 
 i.fab:hover {
-	color: $yellow;
+  color: $main;
 }
 
 /*-----HOME------*/
 div.section-home {
-	height: 90vh;
+  height: 90vh;
 
-	background-image: url(../images/b.jpg);
-	background-size: cover;
-	background-position: center;
-	
+  background-image: url(../images/cup-white-home.jpg);
+  background-size: cover;
+  background-position: center;
 }
 h3.home {
-	background-color: rgba(102, 99, 99, 0.487);
-	color: $yellowFull;
-	font-family: "EB Garamond", serif;
-	font-size: 30px;
-	margin-top: 20px;
-	position: relative;
+  background-color: rgba(102, 99, 99, 0.487);
+  color: $mainFull;
+  font-family: "EB Garamond", serif;
+  font-size: 30px;
+  margin-top: 20px;
+  position: relative;
 
-	letter-spacing: 5px;
+  letter-spacing: 5px;
 
-	@include md {
-		font-size: 2.7rem;
-	}
-	@include sm {
-		font-size: 2rem;
-	}
+  @include md {
+    font-size: 2.7rem;
+  }
+  @include sm {
+    font-size: 2rem;
+  }
 }
 h2.home {
-	margin: 0%;
-	margin-top: 50px;
-	
-	position: relative;
-	color:$yellowFull;
-	
-	font-family: "EB Garamond", serif;
-	font-size: 4rem;
-	letter-spacing: 5px;
-	animation-name: fadein;
-	animation-duration: 5s;
-	animation-iteration-count: 1;
+  margin: 0%;
+  margin-top: 50px;
 
-	@include md {
-		font-size: 3.8rem;
-	
-	}
-	@include sm {
-		font-size: 3rem;
-	}
-	@include xs {font-size: 3rem;}
+  position: relative;
+  color: $mainFull;
+
+  font-family: "EB Garamond", serif;
+  font-size: 4rem;
+  letter-spacing: 5px;
+  animation-name: fadein;
+  animation-duration: 5s;
+  animation-iteration-count: 1;
+
+  @include md {
+    font-size: 3.8rem;
+  }
+  @include sm {
+    font-size: 3rem;
+  }
+  @include xs {
+    font-size: 3rem;
+  }
 }
-h2.home1{color: white;
-text-align: left;
-font-size: 3rem; margin-top: 40px;
-letter-spacing: 2px;
-@include md {
-	font-size: 2.7rem;
-	margin-top: 25px;
+h2.home1 {
+  color: white;
+  text-align: left;
+  font-size: 3rem;
+  margin-top: 40px;
+  letter-spacing: 2px;
+  @include md {
+    font-size: 2.7rem;
+    margin-top: 25px;
+  }
+  @include sm {
+    font-size: 2rem;
+    margin-top: 20px;
+  }
 }
-@include sm {
-	font-size: 2rem;margin-top: 20px;
-}}
 div.home {
-	position: relative;
-	height: 300px;
+  position: relative;
+  height: 300px;
 
-	margin-bottom: 20px;
-	display: flex;
-	flex-direction: column;
-	
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
 
-	animation-name: fadeout;
-	animation-duration: 5s;
+  animation-name: fadeout;
+  animation-duration: 5s;
 }
 
 @keyframes fadein {
-	0% {
-		opacity: 0;
-	}
-	25% {
-		opacity: 0.2;
-	}
-	50% {
-		opacity: 0.5;
-	}
-	75% {
-		opacity: 0.7;
-	}
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 0.2;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  75% {
+    opacity: 0.7;
+  }
 
-	100% {
-		opacity: 1;
-	}
+  100% {
+    opacity: 1;
+  }
 }
 
 div.carousel-item {
-	.card { border: none;
-		background-color: transparent;
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		align-items: center;
-		padding: 20px;
+  .card {
+    border: none;
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
 
-		h3 {
-			font-size: 40px;
-			font-weight: lighter;
-			color: rgb(95, 67, 35);
-			margin-bottom: 10px;
-			margin-top: 40px;
+    h3 {
+      font-size: 40px;
+      font-weight: lighter;
+      color: rgb(95, 67, 35);
+      margin-bottom: 10px;
+      margin-top: 40px;
 
-			@include lg {
-				font-size: 35px;
-				margin-top: 20px;
-				margin-bottom: 25px;
-			}
-			@include md {
-				font-size: 25px;
+      @include lg {
+        font-size: 35px;
+        margin-top: 20px;
+        margin-bottom: 25px;
+      }
+      @include md {
+        font-size: 25px;
 
-				margin-bottom: 20px;
-			}
-			@include sm {
-				font-size: 23px;
+        margin-bottom: 20px;
+      }
+      @include sm {
+        font-size: 23px;
 
-				margin-bottom: 15px;
-			}
-		}
-		.button {
-			padding: 2px;
-			color: rgb(95, 67, 35);
-			border: solid 1px rgb(95, 67, 35);
-			text-decoration: none;
+        margin-bottom: 15px;
+      }
+    }
+    .button {
+      padding: 2px;
+      color: rgb(95, 67, 35);
+      border: solid 1px rgb(95, 67, 35);
+      text-decoration: none;
 
-			margin-bottom: 20px;
-		}
-		.button:hover{
-			font-weight: 600
-		}
-	}
+      margin-bottom: 20px;
+    }
+    .button:hover {
+      font-weight: 600;
+    }
+  }
 }
 
 /*----PRODUCTS-----*/
 .arabica,
 .liberica,
 .robusta {
-	@include transparentBack;
+  @include transparentBack;
 }
 div.subtitle {
-	text-align: center;
+  text-align: center;
 }
 
 h2.types {
-	font-size: 3rem;
-	text-align: center;
-	margin: 15px;
-	font-family: 'EB Garamond', serif;
+  font-size: 3rem;
+  text-align: center;
+  margin: 15px;
+  font-family: "EB Garamond", serif;
 }
 div.products {
-	@include transparentBack;
-	color: $yellowFull;
+  @include transparentBack;
+  color: $mainFull;
 }
 
 .hovereffect {
-	height: 170px;
-	overflow: hidden;
-	position: relative;
-	text-align: center;
-	cursor: default;
-margin-bottom: 20px;
-	
-	border-radius: 15px;
-	border: solid 2px rgba(136, 136, 136, 0.5);
-	@include md {
-		height: 150px;
-	}
+  height: 170px;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  cursor: default;
+  margin-bottom: 20px;
+
+  border-radius: 15px;
+  border: solid 2px rgba(136, 136, 136, 0.5);
+  @include md {
+    height: 150px;
+  }
 }
 div.arabica {
-	.coffee {
-		@include cardback {
-			background-image: url(../images/coffee-beans.jpg);
-		}
-	}
-	.coffee-1 {
-		@include cardback {
-			background-image: url(../images/coffee-beans1.jpg);
-		}
-	}
-	.coffee-2 {
-		@include cardback {
-			background-image: url(../images/coffee-beans2.jpg);
-		}
-	}
-	.coffee-3 {
-		@include cardback {
-			background-image: url(../images/coffee-beans3.jpg);
-		}
-	}
-	.coffee-4 {
-		@include cardback {
-			background-image: url(../images/coffee-beans4.jpg);
-		}
-	}
-	.coffee-5 {
-		@include cardback {
-			background-image: url(../images/coffee-beans5.jpg);
-		}
-	}
+  .coffee {
+    @include cardback {
+      background-image: url(../images/coffee-beans.jpg);
+    }
+  }
+  .coffee-1 {
+    @include cardback {
+      background-image: url(../images/coffee-beans1.jpg);
+    }
+  }
+  .coffee-2 {
+    @include cardback {
+      background-image: url(../images/coffee-beans2.jpg);
+    }
+  }
+  .coffee-3 {
+    @include cardback {
+      background-image: url(../images/coffee-beans3.jpg);
+    }
+  }
+  .coffee-4 {
+    @include cardback {
+      background-image: url(../images/coffee-beans4.jpg);
+    }
+  }
+  .coffee-5 {
+    @include cardback {
+      background-image: url(../images/coffee-beans5.jpg);
+    }
+  }
 }
 div.robusta {
-	.coffee-6 {
-		@include cardback {
-			background-image: url(../images/coffee-beans6.jpg);
-		}
-	}
-	.coffee-7 {
-		@include cardback {
-			background-image: url(../images/coffee-beans7.jpg);
-		}
-	}
+  .coffee-6 {
+    @include cardback {
+      background-image: url(../images/coffee-beans6.jpg);
+    }
+  }
+  .coffee-7 {
+    @include cardback {
+      background-image: url(../images/coffee-beans7.jpg);
+    }
+  }
 }
 
 .liberica {
-	.coffee-8 {
-		@include cardback {
-			background-image: url(../images/coffee-beans9.jpg);
-		}
-	}
+  .coffee-8 {
+    @include cardback {
+      background-image: url(../images/coffee-beans9.jpg);
+    }
+  }
 }
 
 .hovereffect .overlay {
-	position: absolute;
-	overflow: hidden;
-	top: 0;
-	left: 0;
-	-webkit-transition: all 0.4s ease-in-out;
-	transition: all 0.4s ease-in-out;
+  position: absolute;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
 }
 
 .hovereffect h3 {
-	font-size: 30px;
-	margin-top: 0px;
-margin-bottom: 0%;
-	color: white;
-	text-align: center;
-	position: relative;
-	font-weight: 500;
-	-webkit-transform: translateY(45px);
-	-ms-transform: translateY(45px);
-	transform: translateY(45px);
-	-webkit-transition: all 0.4s ease-in-out;
-	transition: all 0.4s ease-in-out;
-	background:rgba(77, 77, 77, 0.5);
-	box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
-	
-	@include md {
-		font-size: 28px;
-	}
+  font-size: 30px;
+  margin-top: 0px;
+  margin-bottom: 0%;
+  color: white;
+  text-align: center;
+  position: relative;
+  font-weight: 500;
+  -webkit-transform: translateY(45px);
+  -ms-transform: translateY(45px);
+  transform: translateY(45px);
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+  background: rgba(77, 77, 77, 0.5);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+
+  @include md {
+    font-size: 28px;
+  }
 }
 .hovereffect h6 {
-	font-size: 25px;
-	margin: 0%;
-	color: #fff;
-	text-align: center;
-	position: relative;
-	-webkit-transform: translateY(45px);
-	-ms-transform: translateY(45px);
-	transform: translateY(45px);
-	-webkit-transition: all 0.4s ease-in-out;
-	transition: all 0.4s ease-in-out;
-	margin-top: 5px;
-	@include md {
-	font-size: 20px;
-		margin-top: 10px;
-	}
+  font-size: 25px;
+  margin: 0%;
+  color: #fff;
+  text-align: center;
+  position: relative;
+  -webkit-transform: translateY(45px);
+  -ms-transform: translateY(45px);
+  transform: translateY(45px);
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+  margin-top: 5px;
+  @include md {
+    font-size: 20px;
+    margin-top: 10px;
+  }
 }
 
 .hovereffect:hover h3,
 .hovereffect:hover h6 {
-	color: white;
-	-webkit-transform: translateY(0px);
-	-ms-transform: translateY(0px);
-	transform: translateY(0px);
-	background-color: transparent;
+  color: white;
+  -webkit-transform: translateY(0px);
+  -ms-transform: translateY(0px);
+  transform: translateY(0px);
+  background-color: transparent;
 }
 .hovereffect:hover h3 {
-	color: #df9872;
-	background: rgba(0, 0, 0, 0.8);
-	box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
-	z-index: 20;
-	border-bottom: solid 1px #df9872;
+  color: #df9872;
+  background: rgba(0, 0, 0, 0.8);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+  z-index: 20;
+  border-bottom: solid 1px #df9872;
 }
 .hovereffect div.info {
-	color: white;
-	background-color: transparent;
-	
-	filter: alpha(opacity=0);
-	-webkit-transform: scale(0);
-	-ms-transform: scale(0);
-	transform: scale(0);
-	-webkit-transition: all 0.4s ease-in-out;
-	transition: all 0.4s ease-in-out;
-	font-weight: normal;
-	width: fill;
-	height: 60%;
+  color: white;
+  background-color: transparent;
 
-	line-height: 1.2;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
+  filter: alpha(opacity=0);
+  -webkit-transform: scale(0);
+  -ms-transform: scale(0);
+  transform: scale(0);
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+  font-weight: normal;
+  width: fill;
+  height: 60%;
+
+  line-height: 1.2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .hovereffect:hover div.info {
-	background: rgba(0, 0, 0, 0.6);
-	opacity: 1;
-	filter: alpha(opacity=100);
-	-webkit-transform: scale(1);
-	-ms-transform: scale(1);
-	transform: scale(1);
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-
+  background: rgba(0, 0, 0, 0.6);
+  opacity: 1;
+  filter: alpha(opacity=100);
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-div.info p {color: white;
-	font-size: 15px;
-    margin-top: 10px;
-	margin-bottom: 12px;
-	
-	
-	@include md {
-		font-size: 12px;
-		margin-top: 0%;
-		margin-bottom: 8px;
-	}
-	@include sm {font-size: 15px;}
+div.info p {
+  color: white;
+  font-size: 15px;
+  margin-top: 10px;
+  margin-bottom: 12px;
+
+  @include md {
+    font-size: 12px;
+    margin-top: 0%;
+    margin-bottom: 8px;
+  }
+  @include sm {
+    font-size: 15px;
+  }
 }
 
 a.products {
-	color: whitesmoke;
-	text-decoration: none;
-	background: transparent;
-	border-radius: 50px;
-	border: 1px solid #df9872;
-	transition: all 0.4s ease 0s;
-	padding: 4px;
-	margin-bottom: 5px;
+  color: whitesmoke;
+  text-decoration: none;
+  background: transparent;
+  border-radius: 50px;
+  border: 1px solid #df9872;
+  transition: all 0.4s ease 0s;
+  padding: 4px;
+  margin-bottom: 5px;
 
-	align-self: center;
-	
-	@include md {
-		margin-top: 0%;
-		font-size: 12px;
-	}
+  align-self: center;
+
+  @include md {
+    margin-top: 0%;
+    font-size: 12px;
+  }
 }
 a.products:hover {
-	box-shadow: 0 0px 10px 1px #f5cab2 ;
+  box-shadow: 0 0px 10px 1px #f5cab2;
 }
 
 /*----ABOUT US-------*/
 
 div.about_us {
-	
-	@include transparentBack;
-	
-	h2{padding: 0%;
-		font-size: 2.875rem;
-		color: $yellow;
-		text-align: center;
-		font-weight: 200;
-		margin-top: 30px;}
-	p.about_us {
-		text-align: center;
-	
-		font-size: 1.2rem;
-		margin: 20px;
-	}
-	a.about_us {
-		font-weight:800;
-		color: $yellow;
-	}
+  @include transparentBack;
 
-	div.img{ height: 100%;
-		display:flex;
-	align-items: center;
-	
-img{width: 100%;
-	margin-bottom: 10px
-	
+  h2 {
+    padding: 0%;
+    font-size: 2.875rem;
+    color: $main;
+    text-align: center;
+    font-weight: 200;
+    margin-top: 30px;
+  }
+  p.about_us {
+    text-align: center;
+
+    font-size: 1.2rem;
+    margin: 20px;
+  }
+  a.about_us {
+    font-weight: 800;
+    color: $main;
+  }
+
+  div.img {
+    height: 100%;
+    display: flex;
+    align-items: center;
+
+    img {
+      width: 100%;
+      margin-bottom: 10px;
+    }
+  }
 }
-}
-}
-
-
-
 
 /*----Contact -----*/
 div.contact {
-	@include transparentBack;
+  @include transparentBack;
 }
 h2.contact {
-	padding: 0%;
-	font-size: 2.875rem;
-	color: $yellow;
-	text-align: center;
-	font-weight: 200;
-	margin-top: 30px;
-	
+  padding: 0%;
+  font-size: 2.875rem;
+  color: $main;
+  text-align: center;
+  font-weight: 200;
+  margin-top: 30px;
 }
 form {
-	color: $yellow;
-	font-size: 1.125rem;
-	text-align: center;
+  color: $main;
+  font-size: 1.125rem;
+  text-align: center;
 
-	.form-control {
-		@include formInput;
-		color: $yellow;
-		
-	}
-	.form-control:focus {
-		@include formInput;
-		box-shadow: 0 0px 10px -2px $yellow;
-		color: $yellow;
-	}
-	input.form-check-input {
-		margin-left: 15px;
-		position: relative;
-	}
-	label {
-		color: $yellow;
-		font-weight: 900;
-		.form-check-label {
-			padding: 7px 15px;
-		}
-	}
+  .form-control {
+    @include formInput;
+    color: $main;
+  }
+  .form-control:focus {
+    @include formInput;
+    box-shadow: 0 0px 10px -2px $main;
+    color: $main;
+  }
+  input.form-check-input {
+    margin-left: 15px;
+    position: relative;
+  }
+  label {
+    color: $main;
+    font-weight: 900;
+    .form-check-label {
+      padding: 7px 15px;
+    }
+  }
 }
 ul.contact {
-	color: $yellow;
-	text-align: center;
+  color: $main;
+  text-align: center;
 }
 
-button.contact{background-color:#e6aa8a ;
-border: solid 1px $yellow}
-button.contact:hover{background-color: #f5cab2;}
-
-
+button.contact {
+  background-color: #e6aa8a;
+  border: solid 1px $main;
+}
+button.contact:hover {
+  background-color: #f5cab2;
+}
 
 /* Elaboration Process*/
 h2.elaboration {
-	margin-top: 20px
+  margin-top: 20px;
 }
 div.elaboration {
-	@include transparentBack;
+  @include transparentBack;
 
-	div.row {
-		text-align: center;
+  div.row {
+    text-align: center;
 
-		border-top: solid 1px rgba(136, 136, 136, 0.5);
-		box-sizing: border-box;
-		h3 {font-size: 40px;
-			background-color: transparent;
-			box-shadow: none;
-		}
-		h4{margin-top: 20px;}
-		img {
-			max-width: 100%;
-			height: auto;
-			
-		
-			
-			
-		}
-		p {
-			margin: 20px;
-			@include md {margin: 10px;}
-		}
-	}
-	div.start{border-top: none;}
-	div.final {
-		border-bottom: none
-	}
-	ul.elaboration li {
-		color: white;
-		list-style-type: none;
-	}
+    border-top: solid 1px rgba(136, 136, 136, 0.5);
+    box-sizing: border-box;
+    h3 {
+      font-size: 40px;
+      background-color: transparent;
+      box-shadow: none;
+    }
+    h4 {
+      margin-top: 20px;
+    }
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+    p {
+      margin: 20px;
+      @include md {
+        margin: 10px;
+      }
+    }
+  }
+  div.start {
+    border-top: none;
+  }
+  div.final {
+    border-bottom: none;
+  }
+  ul.elaboration li {
+    color: white;
+    list-style-type: none;
+  }
 }
 /*# sourceMappingURL=styles.css.map */
