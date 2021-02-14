@@ -21,7 +21,6 @@ h2 {
   padding: 0%;
   font-size: 46px;
   color: $main;
-  margin-left: 30px;
   font-weight: 200;
   color: $main;
   @include md {
@@ -590,7 +589,8 @@ div.about_us {
     align-items: center;
     img {
       width: 100%;
-      margin-bottom: 10px;
+      margin-bottom: 15px;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
     }
   }
 }
