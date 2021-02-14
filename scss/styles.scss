@@ -1,7 +1,5 @@
 @import "_variables.scss";
 @import "_mixins";
-@import "_each";
-@import "_extend";
 @for $i from 10 through 100 {
   .box-#{$i} {
     width: $i * 1%;
@@ -16,12 +14,6 @@
   margin: 0%;
   padding: 0%;
 }
-
-html {
-  margin: 0%;
-  padding: 0%;
-}
-
 a {
   text-decoration: none;
 }
@@ -342,17 +334,14 @@ h3.home {
 h2.home {
   margin: 0%;
   margin-top: 50px;
-
   position: relative;
   color: $mainFull;
-
   font-family: "EB Garamond", serif;
   font-size: 4rem;
   letter-spacing: 5px;
   animation-name: fadein;
   animation-duration: 5s;
   animation-iteration-count: 1;
-
   @include md {
     font-size: 3.8rem;
   }
@@ -363,29 +352,8 @@ h2.home {
     font-size: 3rem;
   }
 }
-h2.home1 {
-  color: white;
-  text-align: left;
-  font-size: 3rem;
-  margin-top: 40px;
-  letter-spacing: 2px;
-  @include md {
-    font-size: 2.7rem;
-    margin-top: 25px;
-  }
-  @include sm {
-    font-size: 2rem;
-    margin-top: 20px;
-  }
-}
 div.home {
   position: relative;
-  height: 300px;
-
-  margin-bottom: 20px;
-  display: flex;
-  flex-direction: column;
-
   animation-name: fadeout;
   animation-duration: 5s;
 }
@@ -422,7 +390,7 @@ div.carousel-item {
     h3 {
       font-size: 40px;
       font-weight: lighter;
-      color: rgb(95, 67, 35);
+      color: $main;
       margin-bottom: 10px;
       margin-top: 40px;
 
@@ -444,8 +412,8 @@ div.carousel-item {
     }
     .button {
       padding: 2px;
-      color: rgb(95, 67, 35);
-      border: solid 1px rgb(95, 67, 35);
+      color: $main;
+      border: solid 1px $main;
       text-decoration: none;
 
       margin-bottom: 20px;
@@ -484,7 +452,6 @@ div.products {
   text-align: center;
   cursor: default;
   margin-bottom: 20px;
-
   border-radius: 15px;
   border: solid 2px rgba(136, 136, 136, 0.5);
   @include md {
@@ -535,7 +502,6 @@ div.robusta {
     }
   }
 }
-
 .liberica {
   .coffee-8 {
     @include cardback {
@@ -543,7 +509,6 @@ div.robusta {
     }
   }
 }
-
 .hovereffect .overlay {
   position: absolute;
   overflow: hidden;
@@ -552,7 +517,6 @@ div.robusta {
   -webkit-transition: all 0.4s ease-in-out;
   transition: all 0.4s ease-in-out;
 }
-
 .hovereffect h3 {
   font-size: 30px;
   margin-top: 0px;
@@ -568,7 +532,6 @@ div.robusta {
   transition: all 0.4s ease-in-out;
   background: rgba(77, 77, 77, 0.5);
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
-
   @include md {
     font-size: 28px;
   }
@@ -590,7 +553,6 @@ div.robusta {
     margin-top: 10px;
   }
 }
-
 .hovereffect:hover h3,
 .hovereffect:hover h6 {
   color: white;
@@ -609,7 +571,6 @@ div.robusta {
 .hovereffect div.info {
   color: white;
   background-color: transparent;
-
   filter: alpha(opacity=0);
   -webkit-transform: scale(0);
   -ms-transform: scale(0);
@@ -619,7 +580,6 @@ div.robusta {
   font-weight: normal;
   width: fill;
   height: 60%;
-
   line-height: 1.2;
   display: flex;
   flex-direction: column;
@@ -643,7 +603,6 @@ div.info p {
   font-size: 15px;
   margin-top: 10px;
   margin-bottom: 12px;
-
   @include md {
     font-size: 12px;
     margin-top: 0%;
@@ -663,9 +622,7 @@ a.products {
   transition: all 0.4s ease 0s;
   padding: 4px;
   margin-bottom: 5px;
-
   align-self: center;
-
   @include md {
     margin-top: 0%;
     font-size: 12px;
@@ -679,18 +636,8 @@ a.products:hover {
 
 div.about_us {
   @include transparentBack;
-
-  h2 {
-    padding: 0%;
-    font-size: 2.875rem;
-    color: $main;
-    text-align: center;
-    font-weight: 200;
-    margin-top: 30px;
-  }
   p.about_us {
     text-align: center;
-
     font-size: 1.2rem;
     margin: 20px;
   }
@@ -698,12 +645,10 @@ div.about_us {
     font-weight: 800;
     color: $main;
   }
-
   div.img {
     height: 100%;
     display: flex;
     align-items: center;
-
     img {
       width: 100%;
       margin-bottom: 10px;
@@ -714,14 +659,6 @@ div.about_us {
 /*----Contact -----*/
 div.contact {
   @include transparentBack;
-}
-h2.contact {
-  padding: 0%;
-  font-size: 2.875rem;
-  color: $main;
-  text-align: center;
-  font-weight: 200;
-  margin-top: 30px;
 }
 form {
   color: $main;
@@ -771,7 +708,6 @@ div.elaboration {
 
   div.row {
     text-align: center;
-
     border-top: solid 1px rgba(136, 136, 136, 0.5);
     box-sizing: border-box;
     h3 {
