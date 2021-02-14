@@ -343,6 +343,10 @@ p.copy {
   color: white;
 }
 
+footer.home {
+  margin: 0%;
+}
+
 /*-----HOME------*/
 div.section-home {
   height: 90vh;
