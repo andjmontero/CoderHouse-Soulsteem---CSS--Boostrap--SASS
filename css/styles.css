@@ -914,7 +914,7 @@ footer div.container-fluid div.brandfooter h6.brandfooter {
   font-size: 3.125rem;
   margin: 0%;
   color: #794930;
-  margin-bottom: -15px;
+  margin-bottom: -5px;
   margin-top: 10px;
 }
 
@@ -979,10 +979,6 @@ footer div.container-fluid div.ul-footer ul li a:hover {
   color: #794930;
 }
 
-footer div.container-fluid div.ul-footer ul li a:visited {
-  color: white;
-}
-
 footer div.container-fluid div.ul-footer ul li:hover {
   color: #794930;
 }
@@ -994,6 +990,7 @@ footer div.container-fluid div.newsletter {
 footer div.container-fluid div.newsletter h4 {
   font-weight: lighter;
   margin-top: 30px;
+  margin-bottom: 20px;
 }
 
 footer div.container-fluid div.newsletter h4 strong {
@@ -1006,6 +1003,7 @@ footer div.container-fluid div.newsletter form {
 }
 
 footer div.container-fluid div.newsletter input.footer {
+  margin-bottom: 5px;
   display: inline-block;
   width: 230px;
   background-color: white;
@@ -1071,7 +1069,6 @@ footer div.container-fluid div.newsletter :focus {
 }
 
 div.footer-contact {
-  color: white;
   width: auto;
 }
 
@@ -1091,6 +1088,10 @@ i.fab {
 
 i.fab:hover {
   color: #794930;
+}
+
+p.copy {
+  color: wheat;
 }
 
 /*-----HOME------*/
